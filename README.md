@@ -11,7 +11,7 @@ This guide will explain how to run the program locally, which consists of a fron
 3. Install the required dependencies by running the following command:
 ```npm install```
 4. Once the installation is complete, start the backend server by running:
-```npm run```
+```npm start```
 
 This will launch the backend API server on port 3000.
 
@@ -28,7 +28,7 @@ Make sure the frontend application can be accessible at `http://localhost:3001` 
 ## Usage
 Once both the backend and frontend are running, you can access the application in your web browser at `http://localhost:3001`. The frontend provides a user interface with the following features:
 
-1. View Client List: Displays a list of clients with their names, last names, profile images and IDs.
-2. Check Specific Client: Allows you to search for a specific client by their ID. The application will fetch the client's information from the API and display their name, last name, gender, email, and profile image.
-3. Add Client: Provides a form to add a new client. You need to fill in the first name, last name, email, gender, and image URL. If you select "Other" for gender, you can specify a custom gender.
+1. View Customer List: Displays a list of clients with their names, last names, profile images and IDs.
+2. Check Specific Customer: Allows you to search for a specific client by their ID. The application will fetch the client's information from the API and display their name, last name, gender, email, and profile image.
+3. Add Customer: Provides a form to add a new client. You need to fill in the first name, last name, email, gender, and image URL. If you select "Other" for gender, you can specify a custom gender.
 
