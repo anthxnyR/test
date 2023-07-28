@@ -22,7 +22,7 @@ const ClientDetails = () => {
         if (response.ok) {
           return response.json();
         } else {
-          throw new Error('Client ID not found');
+          throw new Error('Costumer ID not found');
         }
       })
       .then((data) => {
@@ -30,9 +30,9 @@ const ClientDetails = () => {
         setSnackbarOpen(false); // Close the Snackbar if it was open from a previous error
       })
       .catch((error) => {
-        console.error('Error fetching client data:', error);
+        console.error('Error fetching costumer data:', error);
         setClientData(null);
-        setSnackbarMessage('Client ID not found');
+        setSnackbarMessage('Customer ID not found');
         setSnackbarOpen(true); // Open the Snackbar with the error message
       });
   };
@@ -51,7 +51,7 @@ const ClientDetails = () => {
         <Grid container spacing={2} alignItems="center" justifyContent="center" direction="column">
           <Grid item xs={12} sm={6}>
             <Typography variant="subtitle1" sx={{ textAlign: 'center', marginBottom: '10px' }}>
-              Enter Client ID
+              Enter Customer ID
             </Typography>
             <TextField
               fullWidth
@@ -70,7 +70,7 @@ const ClientDetails = () => {
       </form>
       {clientData && (
         <Paper style={{ padding: '20px', marginTop: '20px' }}>
-          <Typography variant="h5">Client Information</Typography>
+          <Typography variant="h5">Customer Information</Typography>
           <div style={{ display: 'flex', alignItems: 'center', marginTop: '10px' }}>
             <img
               src={clientData.image}

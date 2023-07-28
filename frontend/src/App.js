@@ -24,11 +24,11 @@ const App = () => {
 
   const renderContent = () => {
     switch (selectedOption) {
-      case 'View Client List':
+      case 'View Customer List':
         return <ClientList />;
-      case 'Check Specific Client':
+      case 'Check Specific Customer':
         return <ClientDetails />; // Replace with appropriate component or data fetching logic
-      case 'Add Client':
+      case 'Add Customer':
         return <CreateClient />; // Replace with appropriate component for adding a client
       default:
         return null;
@@ -45,23 +45,23 @@ const App = () => {
           <Button
             variant="contained"
             color="primary"
-            onClick={() => handleOptionClick('View Client List')}
+            onClick={() => handleOptionClick('View Customer List')}
           >
-            View Client List
+            View Costumer List
           </Button>
           <Button
             variant="contained"
             color="primary"
-            onClick={() => handleOptionClick('Check Specific Client')}
+            onClick={() => handleOptionClick('Check Specific Customer')}
           >
-            Check Specific Client
+            Check Specific Costumer
           </Button>
           <Button
             variant="contained"
             color="primary"
-            onClick={() => handleOptionClick('Add Client')}
+            onClick={() => handleOptionClick('Add Customer')}
           >
-            Add Client
+            Add Costumer
           </Button>
         </div>
       </div>

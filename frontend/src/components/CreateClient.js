@@ -70,7 +70,7 @@ const AddClient = () => {
             gender: '',
             image: '',
           });
-          setSnackbarMessage('Client added successfully.');
+          setSnackbarMessage('Costumer added successfully.');
           setSnackbarSeverity('success');
           setSnackbarOpen(true);
         } else {
@@ -80,8 +80,7 @@ const AddClient = () => {
               // Show specific error message from the API response
               setSnackbarMessage(data.error);
             } else {
-              // Show generic error message
-              setSnackbarMessage('An error occurred while adding the client.');
+              setSnackbarMessage('An error occurred while adding the costumer.');
             }
             setSnackbarSeverity('error');
             setSnackbarOpen(true);
@@ -89,8 +88,8 @@ const AddClient = () => {
         }
       })
       .catch((error) => {
-        console.error('Error adding client:', error);
-        setSnackbarMessage('An error occurred while adding the client.'); // Generic error message
+        console.error('Error adding costumer:', error);
+        setSnackbarMessage('An error occurred while adding the costumer.'); 
         setSnackbarSeverity('error');
         setSnackbarOpen(true);
       });
@@ -194,7 +193,7 @@ const AddClient = () => {
           </Grid>
           <Grid item xs={12}>
             <Button type="submit" variant="contained" color="primary" fullWidth>
-              Add Client
+              Add Costumer
             </Button>
           </Grid>
         </Grid>

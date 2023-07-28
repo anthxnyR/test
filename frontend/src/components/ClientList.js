@@ -1,4 +1,3 @@
-// components/ClientList.js
 import React, { useEffect, useState } from 'react';
 import { Typography } from '@mui/material';
 
@@ -10,7 +9,7 @@ const ClientList = () => {
     fetch('http://localhost:3000/api/customers')
       .then((response) => response.json())
       .then((data) => setUsersData(data))
-      .catch((error) => console.error('Error fetching client data:', error));
+      .catch((error) => console.error('Error fetching customer data:', error));
   }, []);
 
   return (
